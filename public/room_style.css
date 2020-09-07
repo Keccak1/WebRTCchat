@@ -1,0 +1,20 @@
+#div-form {
+    width: 50%;
+    background-color: #242324;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-style: solid;
+    border-color: #D2D2D2;
+    color: #f6f6f6;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}

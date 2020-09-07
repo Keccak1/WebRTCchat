@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="enter.js"></script>
+    <link rel="stylesheet" href="room_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #242324">
+    <div id="main-form">
+        <form name=div-form-form id="div-form-form" action="/connect" method="POST">
+            <div id="div-form">
+                <%if (data) { %>
+                <%if (data.err) { %>
+                <%=data.err %>
+                <% } %>
+                <% } %>
+                <div class="div-form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="div-form-item">
+                    <label for="room">Room</label>
+                    <input type="text" name="room" required>
+                </div>
+                <div class="div-form-item">
+                    <label for="password">Pass </label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="div-form-item">
+                    <button type="submit"> Join to Room </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
